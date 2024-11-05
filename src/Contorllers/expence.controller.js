@@ -4,11 +4,13 @@ exports.create=(req,res)=>{
     const{ date,
         category,
         amount,
+        amountType,
         description,userId}=req.body;
         const Expense=new expense({
             date,
         category,
         amount,
+        amountType,
         description,
         userId
       })

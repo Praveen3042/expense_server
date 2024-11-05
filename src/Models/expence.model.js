@@ -11,6 +11,11 @@ const ExpenseTracker = mongoose.Schema(
       ref: "users",
       required: true,
     },
+    amountType: {
+      type: String,
+      enum: ['income', 'expense'],
+      required: true,
+  },
   },
   {
     timestamps: true,
