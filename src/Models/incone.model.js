@@ -3,7 +3,7 @@ const mongoose=require('mongoose')
 const ExpenseTracker = mongoose.Schema(
   {
     date: String,
-    amount: String,
+    incomeamount: String,
     category: String,
     description: String,
     userId: {
@@ -16,4 +16,4 @@ const ExpenseTracker = mongoose.Schema(
     timestamps: true,
   }
 );
-module.exports=mongoose.model("expense",ExpenseTracker)
+module.exports=mongoose.model("income",ExpenseTracker)
