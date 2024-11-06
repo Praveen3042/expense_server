@@ -1,4 +1,4 @@
-const expense=require('../Models/incone.modell')
+const expense=require('../Models/incone.model')
 
 exports.create=(req,res)=>{
     const{ date,
